@@ -353,7 +353,7 @@ function renderColleges(colleges) {
 }
 
 // ── Fetch AI roadmap ──────────────────────────────────────────────────────────
-fetch("http://localhost:5000/api/career-roadmap", {
+fetch("https://career-path-finder-jebb.onrender.com/api/career-roadmap", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ careerTitle: title, userAnswers })

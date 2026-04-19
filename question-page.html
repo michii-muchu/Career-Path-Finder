@@ -238,7 +238,7 @@ async function fetchNextQuestion() {
     );
 
     try {
-        const res = await fetch("http://localhost:5000/api/next-question", {
+        const res = await fetch("https://career-path-finder-jebb.onrender.com/api/next-question", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ answeredQuestions })
@@ -258,7 +258,7 @@ async function submitAndGetResults() {
     showLoading("Analyzing your profile with AI...");
 
     try {
-        const res = await fetch("http://localhost:5000/api/result", {
+        const res = await fetch("https://career-path-finder-jebb.onrender.com/api/result", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ answeredQuestions })

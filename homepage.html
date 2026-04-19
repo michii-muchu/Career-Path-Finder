@@ -334,7 +334,7 @@ const searchInput = document.getElementById("searchInput");
 
 let allCareers = [];
 
-fetch("http://localhost:5000/api/careers")
+fetch("https://career-path-finder-jebb.onrender.com/api/careers")
   .then(res => {
     if (!res.ok) throw new Error("Server error");
     return res.json();
