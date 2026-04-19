@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Assessment</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 560px;
+            padding: 30px;
+            background: rgb(233, 233, 233);
+            border: 1px solid darkgray;
+            border-radius: 12px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .header h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .q-count {
+            font-size: 13px;
+            color: rgb(87, 86, 86);
+        }
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: white;
+            border-radius: 5px;
+            margin: 12px 0 16px;
+        }
+        .progress {
+            height: 6px;
+            width: 0%;
+            background: #111;
+            border-radius: 5px;
+            transition: width 0.4s ease;
+        }
+        .subtitle {
+            font-size: 13px;
+            color: rgb(87, 86, 86);
+            margin: 0 0 14px;
+        }
+        .question-text {
+            font-size: 17px;
+            font-weight: lighter;
+            color: rgb(69, 69, 69);
+            margin: 0 0 18px;
+            min-height: 50px;
+        }
+        .options-container { margin-bottom: 10px; }
+        .option {
+            display: block;
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            border-radius: 7px;
+            margin-bottom: 9px;
+            cursor: pointer;
+            font-size: 14px;
+            background: #f4f3f3;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .option:hover { background: #e8e8e8; border-color: #aaa; }
+        .option input { margin-right: 10px; }
+        .option.selected { background: #e0e0e0; border-color: #555; }
+
+        /* Loading state */
+        .loading-state {
+            text-align: center;
+            padding: 30px 0;
+            display: none;
+        }
+        .spinner {
+            width: 36px;
+            height: 36px;
+            border: 3px solid #ddd;
+            border-top-color: #111;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 14px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-state p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .ai-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: #111;
+            color: white;
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 22px;
+        }
+        .b1, .b2 {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 8px 14px;
+            border-radius: 7px;
+            border: 1px solid darkgray;
+            background: #f4f3f3;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 14px;
+            gap: 8px;
+        }
+        .b2 {
+            background: rgb(87, 86, 86);
+            color: white;
+            border-color: rgb(87, 86, 86);
+        }
+        .b1:hover { background: darkgray; border-color: black; }
+        .b2:hover { background: black; border-color: black; }
+        .b2:disabled { background: #aaa; border-color: #aaa; cursor: not-allowed; }
+
+        footer p {
+            text-align: center;
+            font-size: 12px;
+            color: rgb(87, 86, 86);
+            margin-top: 28px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h3>Career Assessment</h3>
+        <span class="q-count" id="questionCount">Loading...</span>
+    </div>
+    <div class="progress-bar"><div class="progress" id="progress"></div></div>
+    <p class="subtitle">Answer these questions to discover careers that match your interests and skills.</p>
+
+    <!-- Loading spinner (shown while AI generates next question) -->
+    <div class="loading-state" id="loadingState">
+        <div class="spinner"></div>
+        <p id="loadingMsg">Thinking of the next question...</p>
+    </div>
+
+    <!-- Question UI -->
+    <div id="questionUI">
+        <p class="question-text" id="questionText"></p>
+        <div class="options-container" id="options"></div>
+    </div>
+
+    <div class="buttons">
+        <button class="b1" id="cancelBtn">← Cancel</button>
+        <button class="b2" id="nextBtn" disabled>Next →</button>
+    </div>
+    <footer><p>Because every career journey deserves the right guidance. ❤️</p></footer>
+</div>
+
+<script>
+const TOTAL_QUESTIONS = 5;
+let currentIndex = 0;
+let answeredQuestions = []; // [{ question, answer }, ...]
+let currentQuestion = null; // { question, options }
+
+const loadingState = document.getElementById("loadingState");
+const questionUI   = document.getElementById("questionUI");
+const questionText = document.getElementById("questionText");
+const optionsDiv   = document.getElementById("options");
+const nextBtn      = document.getElementById("nextBtn");
+const progressBar  = document.getElementById("progress");
+const qCount       = document.getElementById("questionCount");
+const loadingMsg   = document.getElementById("loadingMsg");
+
+function showLoading(msg = "AI is thinking...") {
+    loadingState.style.display = "block";
+    questionUI.style.display = "none";
+    nextBtn.disabled = true;
+    loadingMsg.textContent = msg;
+}
+
+function hideLoading() {
+    loadingState.style.display = "none";
+    questionUI.style.display = "block";
+}
+
+function updateProgress() {
+    const pct = ((currentIndex + 1) / TOTAL_QUESTIONS) * 100;
+    progressBar.style.width = pct + "%";
+    qCount.textContent = `Question ${currentIndex + 1} of ${TOTAL_QUESTIONS}`;
+}
+
+function renderQuestion(q) {
+    currentQuestion = q;
+    questionText.textContent = q.question;
+    optionsDiv.innerHTML = "";
+
+    q.options.forEach(opt => {
+        const label = document.createElement("label");
+        label.className = "option";
+        label.innerHTML = `<input type="radio" name="answer" value="${opt}"> ${opt}`;
+        label.addEventListener("change", () => {
+            document.querySelectorAll(".option").forEach(l => l.classList.remove("selected"));
+            label.classList.add("selected");
+            nextBtn.disabled = false;
+        });
+        optionsDiv.appendChild(label);
+    });
+
+    nextBtn.disabled = true;
+    updateProgress();
+}
+
+async function fetchNextQuestion() {
+    showLoading(
+        currentIndex === 0
+            ? "Setting up your assessment..."
+            : "Personalizing next question..."
+    );
+
+    try {
+        const res = await fetch("http://localhost:5000/api/next-question", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ answeredQuestions })
+        });
+
+        if (!res.ok) throw new Error("Server error");
+        const q = await res.json();
+        hideLoading();
+        renderQuestion(q);
+    } catch (err) {
+        console.error(err);
+        alert("Could not load question. Is the backend running?");
+    }
+}
+
+async function submitAndGetResults() {
+    showLoading("Analyzing your profile with AI...");
+
+    try {
+        const res = await fetch("http://localhost:5000/api/result", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ answeredQuestions })
+        });
+
+        if (!res.ok) throw new Error("Server error");
+        const data = await res.json();
+        sessionStorage.setItem("resultData", JSON.stringify(data));
+        // Also save answers for career detail page personalization
+        sessionStorage.setItem("userAnswers", JSON.stringify(answeredQuestions));
+        window.location.href = "Result-page.html";
+    } catch (err) {
+        console.error(err);
+        alert("Backend not responding. Please try again.");
+    }
+}
+
+// Next button logic
+nextBtn.addEventListener("click", () => {
+    const selected = document.querySelector("input[name='answer']:checked");
+    if (!selected) { alert("Please select an option"); return; }
+
+    answeredQuestions.push({
+        question: currentQuestion.question,
+        answer: selected.value
+    });
+
+    currentIndex++;
+
+    if (currentIndex < TOTAL_QUESTIONS) {
+        fetchNextQuestion();
+    } else {
+        submitAndGetResults();
+    }
+});
+
+document.getElementById("cancelBtn").addEventListener("click", () => {
+    if (confirm("Cancel assessment?")) window.location.href = "homepage.html";
+});
+
+// Start
+fetchNextQuestion();
+</script>
+</body>
+</html>

@@ -1,0 +1,2416 @@
+[
+  {
+    "title": "UI/UX Designer",
+    "description": "Designs easy and attractive digital interfaces for apps and websites by understanding user needs.",
+    "category": "technology",
+    "education": [
+      "B.Tech in CSE",
+      "Bachelor of Design (UI/UX / Interaction Design)",
+      "BFA in Digital Design"
+    ],
+    "exams": [
+      "JEE",
+      "State Engineering Exam",
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy",
+        "url": "https://unacademy.com/"
+      },
+      {
+        "name": "Physics Wallah",
+        "url": "https://www.pw.live/"
+      },
+      {
+        "name": "Vedantu",
+        "url": "https://www.vedantu.com/"
+      },
+      {
+        "name": "FIITJEE Online",
+        "url": "https://www.fiitjee.com/"
+      },
+      {
+        "name": "Aakash BYJU’S / Aakash Digital",
+        "url": "https://www.byjus.com/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "NIFT",
+        "url": "https://www.nift.ac.in/"
+      },
+      {
+        "name": "MIT Institute of Design",
+        "url": "https://www.mitid.edu.in/"
+      },
+      {
+        "name": "Pearl Academy",
+        "url": "https://www.pearlacademy.com"
+      }
+    ],
+    "jobs": [
+      "UI Designer",
+      "UX Designer",
+      "Product Designer"
+    ]
+  },
+  {
+    "title": "Graphic Designer",
+    "description": "Creates posters, logos, branding, and visual content using creativity and design tools.",
+    "category": "technology",
+    "education": [
+      "BFA in Graphic Design",
+      "Bachelor of Design (Visual Communication)",
+      "Diploma in Graphic Design"
+    ],
+    "exams": [
+      "Design entrance exams",
+      "Portfolio-based selection"
+    ],
+    "prep": [
+      {
+        "name": "Trandz Academy",
+        "url": "https://trandzacademy.com/"
+      },
+      {
+        "name": "Pahal Design",
+        "url": "https://pahaldesign.com/"
+      },
+      {
+        "name": "Unacademy",
+        "url": "https://unacademy.com/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "NID",
+        "url": "https://www.nid.edu"
+      },
+      {
+        "name": "Symbiosis Institute of Design",
+        "url": "https://www.symbiosis.ac.in"
+      },
+      {
+        "name": "Arena Animation",
+        "url": "https://www.arena-multimedia.com"
+      }
+    ],
+    "jobs": [
+      "Graphic Designer",
+      "Brand Designer",
+      "Visual Designer"
+    ]
+  },
+  {
+    "title": "Singer",
+    "description": "passionate about music, melody, rhythm, and vocal expression.",
+    "category": "creative",
+    "education": [
+      "BA/BFA in Music",
+      "Diploma in Vocal Music"
+    ],
+    "exams": [
+      "CUET",
+      "Audition + Interview"
+    ],
+    "prep": [
+      {
+        "name": "Riyaz – Vocal & Music Learning App",
+        "url": "https://www.riyazapp.com/"
+      },
+      {
+        "name": "Sangeet Music School / Online Learning",
+        "url": "https://www.sangeetacademy.com/"
+      },
+      {
+        "name": "Shankar Mahadevan Academy",
+        "url": "https://www.shankarmahadevanacademy.com/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "KM Music Conservatory"
+      },
+      {
+        "name": "Prayag Sangeet Samiti"
+      },
+      {
+        "name": "BHU",
+        "url": "https://www.bhu.ac.in"
+      },
+      {
+        "name": "DU",
+        "url": "https://www.du.ac.in"
+      }
+    ],
+    "jobs": [
+      "Playback Singer",
+      "Live Performer",
+      "Vocal Coach"
+    ]
+  },
+  {
+    "title": "Dancer/ Choreographer",
+    "description": "Performs or designs dance routines using movement and creativity.",
+    "category": "creative",
+    "education": [
+      "Bachelor of Performing Arts (Dance)",
+      "BFA in Dance",
+      "Professional Dance Diploma"
+    ],
+    "exams": [
+      "Audtion + Interview",
+      "written + Physical + Interview"
+    ],
+    "prep": [
+      "Dance technique courses",
+      "Audition preparation",
+      "Fitness training",
+      "NatyaSutraOnline"
+    ],
+    "colleges": [
+      {
+        "name": "Kalakshetra Foundation",
+        "url": "https://www.kalakshetra.in"
+      },
+      {
+        "name": "National School of Drama",
+        "url": "https://www.nsd.gov.in"
+      },
+      {
+        "name": "Rabindra Bharati University"
+      },
+      {
+        "name": "IGNOU"
+      },
+      {
+        "name": "Delhi University Performing Arts"
+      }
+    ],
+    "jobs": [
+      "Professional Dancer",
+      "Choreographer",
+      "Dance Instructor"
+    ]
+  },
+  {
+    "title": "Software Engineer",
+    "description": "Develops apps, games, websites, and software systems using programming.",
+    "category": "technology",
+    "education": [
+      "B.Tech / BE in Computer Science",
+      "BCA",
+      "Integrated CS programs"
+    ],
+    "exams": [
+      "JEE Main",
+      "Institute-level Selection",
+      "State engineering entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy",
+        "url": "https://unacademy.com/"
+      },
+      {
+        "name": "Physics Wallah",
+        "url": "https://www.pw.live/"
+      },
+      {
+        "name": "Vedantu",
+        "url": "https://www.vedantu.com/"
+      },
+      {
+        "name": "FIITJEE Online",
+        "url": "https://www.fiitjee.com/"
+      },
+      {
+        "name": "Aakash BYJU’S / Aakash Digital",
+        "url": "https://www.byjus.com/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "IITs",
+        "url": "https://www.iit.org/"
+      },
+      {
+        "name": "NITs"
+      },
+      {
+        "name": "IIITs",
+        "url": "https://www.iiit.ac.in/"
+      },
+      {
+        "name": "Private Engineering Colleges"
+      }
+    ],
+    "jobs": [
+      "Software Developer",
+      "Web Developer",
+      "App Developer"
+    ]
+  },
+  {
+    "title": "Doctor",
+    "description": "Diagnoses and treats illnesses and helps people stay healthy.",
+    "category": "healthcare",
+    "education": [
+      "MBBS",
+      "BDS",
+      "BAMS / BHMS"
+    ],
+    "exams": [
+      "NEET-UG"
+    ],
+    "prep": [
+      {
+        "name": "Aakash BYJU’S / Aakash Digital",
+        "url": "https://www.byjus.com/neet/"
+      },
+      {
+        "name": "Allen Career Institute",
+        "url": "https://www.allen.ac.in/neet"
+      },
+      {
+        "name": "FIITJEE NEET Coaching",
+        "url": "https://www.fiitjee.com/neet"
+      },
+      {
+        "name": "Resonance NEET Coaching",
+        "url": "https://www.resonance.ac.in/neet"
+      },
+      {
+        "name": "NEET Prep by Unacademy",
+        "url": "https://unacademy.com/course/neet"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "AIIMS",
+        "url": "https://www.aiims.edu/"
+      },
+      {
+        "name": "Private Medical Colleges"
+      }
+    ],
+    "jobs": [
+      "Doctor",
+      "Medical Officer",
+      "Specialist"
+    ]
+  },
+  {
+    "title": "Lawyer",
+    "description": "Represents clients and provides legal advice.",
+    "category": "law",
+    "education": [
+      "BA LLB (5 years)",
+      "BBA LLB",
+      "LLB (3 years)"
+    ],
+    "exams": [
+      "CLAT",
+      "State law entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Law Prep – CLAT / Legal Exam Courses",
+        "url": "https://byjus.com/examprep/"
+      },
+      {
+        "name": "Toppr",
+        "url": "https://www.toppr.com/"
+      },
+      {
+        "name": "Physics Wallah",
+        "url": "https://www.pw.live/"
+      },
+      {
+        "name": "Vedantu",
+        "url": "https://www.vedantu.com/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "NLUs",
+        "url": "https://nlu.ac.in"
+      },
+      {
+        "name": "Delhi University",
+        "url": "https://www.du.ac.in"
+      },
+      {
+        "name": "Symbiosis Law School"
+      }
+    ],
+    "jobs": [
+      "Lawyer",
+      "Legal Advisor",
+      "Public Prosecutor"
+    ]
+  },
+  {
+    "title": "Architect",
+    "description": "Plans and designs buildings and spaces that are functional, safe, and visually appealing.",
+    "category": "creative",
+    "education": [
+      "Bachelor of Architecture (B.Arch)",
+      "Diploma in Architecture"
+    ],
+    "exams": [
+      "NATA",
+      "JEE Main (Paper 2)"
+    ],
+    "prep": [
+      {
+        "name": "Arch Academy",
+        "url": "https://www.archacademy.com/"
+      },
+      {
+        "name": "Truly Architect",
+        "url": "https://trulyarchitect.com/"
+      },
+      {
+        "name": "Aptitude Coach – NATA / Architecture Entrance",
+        "url": "https://www.nata.in/"
+      },
+      {
+        "name": "MIT Institute of Design (NATA / B.Arch Prep)",
+        "url": "https://www.mitid.edu.in/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "IITs",
+        "url": "https://www.iit.org/"
+      },
+      {
+        "name": "NITs"
+      },
+      {
+        "name": "SPA Delhi",
+        "url": "https://spa.ac.in/"
+      },
+      {
+        "name": "CEPT University",
+        "url": "https://www.cept.ac.in/"
+      },
+      {
+        "name": "Private Architecture Colleges"
+      }
+    ],
+    "jobs": [
+      "Architect",
+      "Urban Designer",
+      "Interior Planner"
+    ]
+  },
+  {
+    "title": "Fashion Designer",
+    "description": "Designs clothing, accessories, and styles based on trends and creativity.",
+    "category": "creative",
+    "education": [
+      "Bachelor of Fashion Design",
+      "BDes in Fashion",
+      "Diploma in Fashion Design"
+    ],
+    "exams": [
+      "NIFT Entrance Exam",
+      "UCEED",
+      "NID DAT",
+      "Design aptitude tests"
+    ],
+    "prep": [
+      {
+        "name": "NIFT Entrance Prep – Unacademy",
+        "url": "https://unacademy.com/course/nift"
+      },
+      {
+        "name": "Pearl Academy Prep Courses",
+        "url": "https://www.pearlacademy.com/"
+      },
+      {
+        "name": "MIT Institute of Design Prep",
+        "url": "https://www.mitid.edu.in/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "NIFT",
+        "url": "https://www.nift.ac.in/"
+      },
+      {
+        "name": "NID",
+        "url": "https://www.nid.edu"
+      },
+      {
+        "name": "FDDI",
+        "url": ""
+      },
+      {
+        "name": "Pearl Academy",
+        "url": "https://www.pearlacademy.com/"
+      },
+      {
+        "name": "Private Fashion Institutes"
+      }
+    ],
+    "jobs": [
+      "Fashion Designer",
+      "Stylist",
+      "Fashion Consultant"
+    ]
+  },
+  {
+    "title": "Artist/Illustrator",
+    "description": "Expresses ideas through drawings, paintings, or digital art.",
+    "category": "creative",
+    "education": [
+      "BFA",
+      "Diploma in Fine Arts"
+    ],
+    "exams": [
+      "Art college entrance tests",
+      "Institute-level Selection"
+    ],
+    "prep": [
+      "Digital illustration courses",
+      "Sketching practice"
+    ],
+    "colleges": [
+      {
+        "name": "JJ School of Art"
+      },
+      {
+        "name": "College of Art Delhi"
+      },
+      {
+        "name": "BHU",
+        "url": "https://www.bhu.ac.in"
+      },
+      {
+        "name": "Shantiniketan"
+      }
+    ],
+    "jobs": [
+      "Illustrator",
+      "Concept Artist",
+      "Freelance Artist"
+    ]
+  },
+  {
+    "title": "Makeup Artist",
+    "description": "Uses beauty techniques to enhance appearance for fashion, media, or events.",
+    "category": "creative",
+    "education": [
+      "Professional Makeup Certification",
+      "Diploma/Certificate inCosmetology"
+    ],
+    "exams": [
+      "Institute-level selection"
+    ],
+    "prep": [
+      "Makeup workshops",
+      "Practical training"
+    ],
+    "colleges": [
+      {
+        "name": "VLCC",
+        "url": "https://www.vlccinstitute.com/"
+      },
+      {
+        "name": "Pearl Academy",
+        "url": "https://www.pearlacademy.com/"
+      },
+      {
+        "name": "Lakme Academy",
+        "url": "https://www.lakmeacademy.in/"
+      },
+      {
+        "name": "Private Makeup Institutes"
+      }
+    ],
+    "jobs": [
+      "Makeup Artist",
+      "Celebrity Makeup Artist",
+      "Beauty Consultant"
+    ]
+  },
+  {
+    "title": "Content Creator",
+    "description": "Creates videos, blogs, reels, or posts for digital platforms and social media.",
+    "category": "creative",
+    "education": [
+      "Any bachelor's degree",
+      "BA in Media helpful",
+      "Digital media courses"
+    ],
+    "exams": [
+      "No formal exams"
+    ],
+    "prep": [
+      "Content creation courses",
+      "Video & writing skills"
+    ],
+    "colleges": [
+      {
+        "name": "No-Specific colleges"
+      },
+      {
+        "name": "Online Platforms"
+      },
+      {
+        "name": "Media Institutes"
+      }
+    ],
+    "jobs": [
+      "YouTuber",
+      "Influencer",
+      "Content Strategist"
+    ]
+  },
+  {
+    "title": "Journalist",
+    "description": "Collects, writes, and reports news for newspapers, TV, or online media.",
+    "category": "media",
+    "education": [
+      "BA in Mass Communication",
+      "Bachelor of Journalism and Mass Communication"
+    ],
+    "exams": [
+      "CUET",
+      "DUET",
+      "IIMC",
+      "University journalism entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Arena Animation – Multimedia & Media Design",
+        "url": "https://www.arena-multimedia.com/"
+      },
+      {
+        "name": "MAAC – Maya Academy of Advanced Cinematics",
+        "url": "https://www.maacindia.com/"
+      },
+      {
+        "name": "FTII – Film & TV Skills / Media",
+        "url": "https://www.ftii.ac.in/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "IIMC"
+      },
+      {
+        "name": "DU",
+        "url": "https://www.du.ac.in"
+      },
+      {
+        "name": "Symbiosis"
+      },
+      {
+        "name": "Asian College of Journalism"
+      }
+    ],
+    "jobs": [
+      "Journalist",
+      "Reporter",
+      "News Editor"
+    ]
+  },
+  {
+    "title": "Video Editor",
+    "description": "Edits raw video footage into engaging and professional videos.",
+    "category": "creative",
+    "education": [
+      "Diploma in Video Editing",
+      "BSc in Animation",
+      "Film & Media Courses"
+    ],
+    "exams": [
+      "College specific"
+    ],
+    "prep": [
+      "Premiere Pro & After Effects",
+      "Editing practice"
+    ],
+    "colleges": [
+      {
+        "name": "MAAC"
+      },
+      {
+        "name": "Arena Animation"
+      },
+      {
+        "name": "FTII"
+      },
+      {
+        "name": "Film Institutes"
+      }
+    ],
+    "jobs": [
+      "Video Editor",
+      "Post-production Artist"
+    ]
+  },
+  {
+    "title": "Filmmaker",
+    "description": "Works on directing, shooting, and producing films or documentaries.",
+    "category": "media",
+    "education": [
+      "BFA in Film",
+      "Diploma in Direction",
+      "Mass Communication Degree"
+    ],
+    "exams": [
+      "FTII",
+      "SRFTI",
+      "College Specific"
+    ],
+    "prep": [
+      {
+        "name": "Arena Animation – Multimedia & Media Design",
+        "url": "https://www.arena-multimedia.com/"
+      },
+      {
+        "name": "MAAC – Maya Academy of Advanced Cinematics",
+        "url": "https://www.maacindia.com/"
+      },
+      {
+        "name": "FTII – Film & TV Skills / Media",
+        "url": "https://www.ftii.ac.in/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "FTII Pune"
+      },
+      {
+        "name": "SRFTI"
+      },
+      {
+        "name": "Whistling Woods"
+      }
+    ],
+    "jobs": [
+      "Director",
+      "Producer",
+      "Screenwriter"
+    ]
+  },
+  {
+    "title": "Public Speaker/Anchor",
+    "description": "Hosts shows, events, or news programs with confidence and clarity.",
+    "category": "media",
+    "education": [
+      "BA in Communication",
+      "Mass Communication",
+      "Theatre",
+      "Public Speaking Courses"
+    ],
+    "exams": [
+      "No formal exams"
+    ],
+    "prep": [
+      "Communication training",
+      "Stage practice"
+    ],
+    "colleges": [
+      {
+        "name": "NSD",
+        "url": "https://www.nsd.gov.in"
+      },
+      {
+        "name": "Xavier's"
+      },
+      {
+        "name": "DU"
+      }
+    ],
+    "jobs": [
+      "Anchor",
+      "Motivational Speaker",
+      "Host"
+    ]
+  },
+  {
+    "title": "Entrepreneur",
+    "description": "Starts and grows new businesses by solving real-world problems.",
+    "category": "business",
+    "education": [
+      "Any bachelor's degree",
+      "Business courses"
+    ],
+    "exams": [
+      "No mandatory exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy CAT Prep",
+        "url": "https://unacademy.com/course/cat"
+      },
+      {
+        "name": "Byju’s Exam Prep – CAT / MBA",
+        "url": "https://byjus.com/examprep/cat/"
+      },
+      {
+        "name": "TIME – Triumphant Institute of Management Education",
+        "url": "https://www.time4education.com/"
+      }
+    ],
+    "colleges": [
+      "IIMs",
+      "ISB",
+      "NSRCEL(IIMB)",
+      "Private Colleges"
+    ],
+    "jobs": [
+      "Startup Founder",
+      "Business Owner"
+    ]
+  },
+  {
+    "title": "Teacher",
+    "description": "Educates students and builds strong foundations of knowledge.",
+    "category": "education",
+    "education": [
+      "B.Ed",
+      "BA / BSc + Teaching Certification"
+    ],
+    "exams": [
+      "CTET/TET"
+    ],
+    "prep": [
+      "Testbook",
+      "Gradeup",
+      "Unacademy",
+      "EduTap"
+    ],
+    "colleges": [
+      "RIE",
+      "Education Colleges"
+    ],
+    "jobs": [
+      "School Teacher",
+      "Online Educator"
+    ]
+  },
+  {
+    "title": "Aerospace Engineer",
+    "description": "Works on aircraft, satellites, and space technology.",
+    "category": "technology",
+    "education": [
+      "B.Tech in Aerospace Engineering",
+      "B.Tech in Aeronautical Engineering"
+    ],
+    "exams": [
+      "JEE Main",
+      "University-specific entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Aakash BYJU’S / Aakash Digital – JEE",
+        "url": "https://www.byjus.com/jee/"
+      },
+      {
+        "name": "Allen Career Institute – JEE",
+        "url": "https://www.allen.ac.in/jee"
+      },
+      {
+        "name": "Resonance JEE Coaching",
+        "url": "https://www.resonance.ac.in/jee"
+      },
+      {
+        "name": "Physics Wallah – JEE",
+        "url": "https://www.pw.live/courses/jee"
+      }
+    ],
+    "colleges": [
+      "IIT Bombay",
+      "IIST",
+      "MIT Pune"
+    ],
+    "jobs": [
+      "Aerospace Engineer",
+      "Aircraft Design Engineer"
+    ]
+  },
+  {
+    "title": "Game Developer",
+    "description": "Designs and develops video games using coding and creativity.",
+    "category": "technology",
+    "education": [
+      "B.Tech in Computer Science/IT",
+      "BSc in Game Design"
+    ],
+    "exams": [
+      "JEE Main",
+      "Institute-level Selection",
+      "State engineering entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Aakash BYJU’S / Aakash Digital – JEE",
+        "url": "https://www.byjus.com/jee/"
+      },
+      {
+        "name": "Allen Career Institute – JEE",
+        "url": "https://www.allen.ac.in/jee"
+      },
+      {
+        "name": "Resonance JEE Coaching",
+        "url": "https://www.resonance.ac.in/jee"
+      },
+      {
+        "name": "Physics Wallah – JEE",
+        "url": "https://www.pw.live/courses/jee"
+      }
+    ],
+    "colleges": [
+      "IIT",
+      "NIT",
+      "MIT ID",
+      "VIT",
+      "DSK Supinfocom"
+    ],
+    "jobs": [
+      "Game Developer",
+      "Game Designer"
+    ]
+  },
+  {
+    "title": "Mechanical Engineer",
+    "description": "Designs machines, tools, and mechanical systems.",
+    "category": "technology",
+    "education": [
+      "B.Tech in Mechanical Engineering",
+      "BE in Mech"
+    ],
+    "exams": [
+      "JEE",
+      "State engineering exams",
+      "Institute-level Selection"
+    ],
+    "prep": [
+      {
+        "name": "Resonance JEE Coaching",
+        "url": "https://www.resonance.ac.in/jee"
+      },
+      {
+        "name": "Physics Wallah – JEE",
+        "url": "https://www.pw.live/courses/jee"
+      },
+      {
+        "name": "Toppr – JEE",
+        "url": "https://www.toppr.com/jee/"
+      },
+      {
+        "name": "Unacademy – JEE",
+        "url": "https://unacademy.com/course/jee"
+      }
+    ],
+    "colleges": [
+      "IITs",
+      "NITs",
+      "BITS",
+      "Private Engineering Colleges"
+    ],
+    "jobs": [
+      "Mechanical Engineer",
+      "Design Engineer"
+    ]
+  },
+  {
+    "title": "Robotics Engineer",
+    "description": "Designs robots and automation systems.",
+    "category": "technology",
+    "education": [
+      "B.Tech in Robotics / Mechatronics",
+      "Mechanical / Electronics Engineering"
+    ],
+    "exams": [
+      "JEE",
+      "State Engineering Exam",
+      "Institute-level Selection"
+    ],
+    "prep": [
+      {
+        "name": "FIITJEE JEE Coaching",
+        "url": "https://www.fiitjee.com/jee"
+      },
+      {
+        "name": "Aakash BYJU’S / Aakash Digital – JEE",
+        "url": "https://www.byjus.com/jee/"
+      },
+      {
+        "name": "Allen Career Institute – JEE",
+        "url": "https://www.allen.ac.in/jee"
+      },
+      {
+        "name": "Resonance JEE Coaching",
+        "url": "https://www.resonance.ac.in/jee"
+      },
+      {
+        "name": "Physics Wallah – JEE",
+        "url": "https://www.pw.live/courses/jee"
+      }
+    ],
+    "colleges": [
+      "IIT Kanpur",
+      "IIT Hyderabad",
+      "State Engineering Colleges"
+    ],
+    "jobs": [
+      "Robotics Engineer",
+      "Automation Engineer"
+    ]
+  },
+  {
+    "title": "Cybersecurity Specialist",
+    "description": "Protects networks and data from cyber attacks.",
+    "category": "technology",
+    "education": [
+      "B.Tech in Computer Science",
+      "B.Tech in IT/Cybersecurity"
+    ],
+    "exams": [
+      "JEE",
+      "Engineering entrance exams",
+      "CEH",
+      "CompTIA Security+"
+    ],
+    "prep": [
+      {
+        "name": "FIITJEE JEE Coaching",
+        "url": "https://www.fiitjee.com/jee"
+      },
+      {
+        "name": "Aakash BYJU’S / Aakash Digital – JEE",
+        "url": "https://www.byjus.com/jee/"
+      },
+      {
+        "name": "Allen Career Institute – JEE",
+        "url": "https://www.allen.ac.in/jee"
+      },
+      {
+        "name": "Resonance JEE Coaching",
+        "url": "https://www.resonance.ac.in/jee"
+      },
+      {
+        "name": "Physics Wallah – JEE",
+        "url": "https://www.pw.live/courses/jee"
+      }
+    ],
+    "colleges": [
+      "IIIT Delhi",
+      {
+        "name": "Amity",
+        "url": "https://www.amity.edu/"
+      },
+      {
+        "name": "CDAC",
+        "url": "https://www.cdac.in/"
+      },
+      "Private Engineering Colleges"
+    ],
+    "jobs": [
+      "Cybersecurity Analyst",
+      "Security Engineer"
+    ]
+  },
+  {
+    "title": "Electrical Engineer",
+    "description": "Designs and maintains electrical systems, circuits, and power equipment.",
+    "category": "technology",
+    "education": [
+      "B.Tech/B.E in Electrical Engineering"
+    ],
+    "exams": [
+      "JEE Main",
+      "State engineering exams"
+    ],
+    "prep": [
+      {
+        "name": "FIITJEE JEE Coaching",
+        "url": "https://www.fiitjee.com/jee"
+      },
+      {
+        "name": "Aakash BYJU’S / Aakash Digital – JEE",
+        "url": "https://www.byjus.com/jee/"
+      },
+      {
+        "name": "Allen Career Institute – JEE",
+        "url": "https://www.allen.ac.in/jee"
+      },
+      {
+        "name": "Resonance JEE Coaching",
+        "url": "https://www.resonance.ac.in/jee"
+      },
+      {
+        "name": "Physics Wallah – JEE",
+        "url": "https://www.pw.live/courses/jee"
+      }
+    ],
+    "colleges": [
+      "IITs",
+      "NITs",
+      "Private Engineering Colleges"
+    ],
+    "jobs": [
+      "Electrical Engineer",
+      "Power Engineer"
+    ]
+  },
+  {
+    "title": "Physiotherapist",
+    "description": "Helps patients recover movement after injuries or surgeries.",
+    "category": "healthcare",
+    "education": [
+      "Bachelor of Physiotherapy (BPT)"
+    ],
+    "exams": [
+      "NEET-UG",
+      "CET",
+      "University medical entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Allen Career Institute – NEET",
+        "url": "https://www.allen.ac.in/neet"
+      },
+      {
+        "name": "FIITJEE NEET Coaching",
+        "url": "https://www.fiitjee.com/neet"
+      },
+      {
+        "name": "Resonance NEET Coaching",
+        "url": "https://www.resonance.ac.in/neet"
+      },
+      {
+        "name": "Physics Wallah – NEET",
+        "url": "https://www.pw.live/courses/neet"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "LPU",
+        "url": "https://www.lpu.in/"
+      },
+      {
+        "anme": "Jamia Hamdard"
+      },
+      "Medical Colleges"
+    ],
+    "jobs": [
+      "Physiotherapist",
+      "Rehabilitation Specialist"
+    ]
+  },
+  {
+    "title": "Nurse",
+    "description": "Takes care of patients, assists doctors, and supports recovery and treatment.",
+    "category": "healthcare",
+    "education": [
+      "BSc Nursing",
+      "GNM Diploma"
+    ],
+    "exams": [
+      "NEET-UG",
+      "Nursing entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Allen Career Institute – NEET",
+        "url": "https://www.allen.ac.in/neet"
+      },
+      {
+        "name": "FIITJEE NEET Coaching",
+        "url": "https://www.fiitjee.com/neet"
+      },
+      {
+        "name": "Resonance NEET Coaching",
+        "url": "https://www.resonance.ac.in/neet"
+      },
+      {
+        "name": "Physics Wallah – NEET",
+        "url": "https://www.pw.live/courses/neet"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "AIIMS",
+        "url": "https://www.aiims.edu/"
+      },
+      "Private Nursing Colleges"
+    ],
+    "jobs": [
+      "Staff Nurse",
+      "ICU/OT Nurse",
+      "Clinical Nurse"
+    ]
+  },
+  {
+    "title": "Psychologist",
+    "description": "Supports mental health and emotional well-being.",
+    "category": "healthcare",
+    "education": [
+      "BA/BSc Psychology"
+    ],
+    "exams": [
+      "CUET",
+      "DUET",
+      "University psychology entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Allen Career Institute – NEET",
+        "url": "https://www.allen.ac.in/neet"
+      },
+      {
+        "name": "FIITJEE NEET Coaching",
+        "url": "https://www.fiitjee.com/neet"
+      },
+      {
+        "name": "Resonance NEET Coaching",
+        "url": "https://www.resonance.ac.in/neet"
+      },
+      {
+        "name": "Physics Wallah – NEET",
+        "url": "https://www.pw.live/courses/neet"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "Delhi University",
+        "url": "https://www.du.ac.in"
+      },
+      {
+        "name": "TISS",
+        "url": "https://www.tiss.edu/"
+      },
+      "Private Psychology Colleges"
+    ],
+    "jobs": [
+      "Psychologist",
+      "Counselor"
+    ]
+  },
+  {
+    "title": "Nutritionist",
+    "description": "Guides people on healthy eating and lifestyle choices.",
+    "category": "healthcare",
+    "education": [
+      "BSc Nutrition",
+      "Dietetics Degree"
+    ],
+    "exams": [
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Allen Career Institute – NEET",
+        "url": "https://www.allen.ac.in/neet"
+      },
+      {
+        "name": "FIITJEE NEET Coaching",
+        "url": "https://www.fiitjee.com/neet"
+      },
+      {
+        "name": "Resonance NEET Coaching",
+        "url": "https://www.resonance.ac.in/neet"
+      },
+      {
+        "name": "Physics Wallah – NEET",
+        "url": "https://www.pw.live/courses/neet"
+      }
+    ],
+    "colleges": [
+      "SNDT",
+      "IGNOU",
+      "NIN",
+      "Home Science Colleges"
+    ],
+    "jobs": [
+      "Nutritionist",
+      "Diet Consultant"
+    ]
+  },
+  {
+    "title": "Fitness Trainer",
+    "description": "Helps people improve physical health and strength.",
+    "category": "healthcare",
+    "education": [
+      "Fitness Certification",
+      "Sports Science Degree"
+    ],
+    "exams": [
+      "Certification exams"
+    ],
+    "prep": [
+      "Fitness & anatomy courses"
+    ],
+    "colleges": [
+      "Sports Institutes",
+      "Private Academies"
+    ],
+    "jobs": [
+      "Fitness Trainer",
+      "Personal Trainer"
+    ]
+  },
+  {
+    "title": "Business Manager",
+    "description": "Manages teams, operations, and company goals.",
+    "category": "business",
+    "education": [
+      "BBA",
+      "MBA"
+    ],
+    "exams": [
+      "CUET",
+      "CAT",
+      "XAT",
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy CAT Prep",
+        "url": "https://unacademy.com/course/cat"
+      },
+      {
+        "name": "Byju’s Exam Prep – CAT / MBA",
+        "url": "https://byjus.com/examprep/cat/"
+      },
+      {
+        "name": "TIME – Triumphant Institute of Management Education",
+        "url": "https://www.time4education.com/"
+      },
+      {
+        "name": "IMS Learning Resources",
+        "url": "https://www.imsindia.com/"
+      }
+    ],
+    "colleges": [
+      "IIMs",
+      "NMIMS",
+      "Symbiosis",
+      "Private Business Colleges"
+    ],
+    "jobs": [
+      "Business Manager",
+      "Operations Manager"
+    ]
+  },
+  {
+    "title": "Marketing Professional",
+    "description": "Promotes products and brands using strategy and creativity.",
+    "category": "business",
+    "education": [
+      "BBA in Marketing",
+      "Digital Marketing Degree"
+    ],
+    "exams": [
+      "CAT",
+      "XAT",
+      "MICA",
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy CAT Prep",
+        "url": "https://unacademy.com/course/cat"
+      },
+      {
+        "name": "Byju’s Exam Prep – CAT / MBA",
+        "url": "https://byjus.com/examprep/cat/"
+      },
+      {
+        "name": "TIME – Triumphant Institute of Management Education",
+        "url": "https://www.time4education.com/"
+      },
+      {
+        "name": "IMS Learning Resources",
+        "url": "https://www.imsindia.com/"
+      }
+    ],
+    "colleges": [
+      "IIMs",
+      "NMIMS",
+      "MICA",
+      "Symbiosis"
+    ],
+    "jobs": [
+      "Marketing Executive",
+      "Digital Marketer"
+    ]
+  },
+  {
+    "title": "Brand Strategist",
+    "description": "Builds brand identity and public image.",
+    "category": "business",
+    "education": [
+      "BBA/ Mass Comm"
+    ],
+    "exams": [
+      "CAT",
+      "MICA",
+      "DUET",
+      "University admissions"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy CAT Prep",
+        "url": "https://unacademy.com/course/cat"
+      },
+      {
+        "name": "Byju’s Exam Prep – CAT / MBA",
+        "url": "https://byjus.com/examprep/cat/"
+      },
+      {
+        "name": "TIME – Triumphant Institute of Management Education",
+        "url": "https://www.time4education.com/"
+      },
+      {
+        "name": "IMS Learning Resources",
+        "url": "https://www.imsindia.com/"
+      }
+    ],
+    "colleges": [
+      "IIMs",
+      "MICA",
+      "DU"
+    ],
+    "jobs": [
+      "Brand Strategist",
+      "Brand Manager"
+    ]
+  },
+  {
+    "title": "Finance Analyst",
+    "description": "Manages money, investments, and financial planning.",
+    "category": "business",
+    "education": [
+      "BCom",
+      "BBA",
+      "CFA",
+      "Finance Degree"
+    ],
+    "exams": [
+      "CAT",
+      "CFA",
+      "GMAT",
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Byju’s Exam Prep – CAT / MBA",
+        "url": "https://byjus.com/examprep/cat/"
+      },
+      {
+        "name": "TIME – Triumphant Institute of Management Education",
+        "url": "https://www.time4education.com/"
+      },
+      {
+        "name": "IMS Learning Resources",
+        "url": "https://www.imsindia.com/"
+      },
+      {
+        "name": "Career Launcher – MBA Prep",
+        "url": "https://www.careerlauncher.com/"
+      }
+    ],
+    "colleges": [
+      "IIMs",
+      "Commerce Colleges",
+      "ISB",
+      "CFA Institute"
+    ],
+    "jobs": [
+      "Finance Analyst",
+      "Investment Analyst"
+    ]
+  },
+  {
+    "title": "Army",
+    "description": "Protects the country and maintains national security.",
+    "category": "defence",
+    "education": [
+      "NDA",
+      "CDS",
+      "Bachelor's degree"
+    ],
+    "exams": [
+      "NDA",
+      "CDS",
+      "AFCAT"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy – NDA & Defence Exam Prep",
+        "url": "https://unacademy.com/course/nda"
+      },
+      {
+        "name": "Byju’s Exam Prep – NDA / CDS / SSB",
+        "url": "https://byjus.com/examprep/nda/"
+      },
+      {
+        "name": "Major Kalshi Classes – Defence Coaching",
+        "url": "https://www.majorkalshiclasses.com/"
+      }
+    ],
+    "colleges": [
+      "NDA",
+      "IMA",
+      "OTA",
+      "INA",
+      "AFA"
+    ],
+    "jobs": [
+      "Defence Officer"
+    ]
+  },
+  {
+    "title": "Pilot",
+    "description": "Flies aircraft for defense, commercial, or private aviation.",
+    "category": "defence",
+    "education": [
+      "Commercial Pilot License (CPL)"
+    ],
+    "exams": [
+      "DGCA exams"
+    ],
+    "prep": [
+      {
+        "name": "Adda247 – Defence & Govt Exam Prep",
+        "url": "https://www.adda247.com/"
+      },
+      {
+        "name": "Oliveboard – CDS / AFCAT / Defence",
+        "url": "https://www.oliveboard.in/"
+      }
+    ],
+    "colleges": [
+      "IGRUA",
+      "Indira Gandhi Institute",
+      "CAE",
+      "Aviation Academies"
+    ],
+    "jobs": [
+      "Commercial Pilot",
+      "Airline Pilot",
+      "Flight Instructor"
+    ]
+  },
+  {
+    "title": "Aviation Engineer",
+    "description": "Maintains and designs aircraft systems.",
+    "category": "defence",
+    "education": [
+      "B.Tech in Aeronautical/ Aerospace",
+      "Aviation Engineering Degree"
+    ],
+    "exams": [
+      "JEE",
+      "Engineering entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy – NDA & Defence Exam Prep",
+        "url": "https://unacademy.com/course/nda"
+      },
+      {
+        "name": "Byju’s Exam Prep – NDA / CDS / SSB",
+        "url": "https://byjus.com/examprep/nda/"
+      },
+      {
+        "name": "Major Kalshi Classes – Defence Coaching",
+        "url": "https://www.majorkalshiclasses.com/"
+      },
+      {
+        "name": "Oliveboard – CDS / AFCAT / Defence",
+        "url": "https://www.oliveboard.in/"
+      },
+      {
+        "name": "Adda247 – Defence & Govt Exam Prep",
+        "url": "https://www.adda247.com/"
+      }
+    ],
+    "colleges": [
+      "IITs",
+      "IIST",
+      "MIT Pune",
+      "Aviation Institutes"
+    ],
+    "jobs": [
+      "Aircraft Design Engineer",
+      "Aviation Engineer"
+    ]
+  },
+  {
+    "title": "Space & ISRO Scientist",
+    "description": "Works on space missions and research.",
+    "category": "defence",
+    "education": [
+      "B.Tech in Physics, Aerospace, CS"
+    ],
+    "exams": [
+      "JEE",
+      "ISRO entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy – NDA & Defence Exam Prep",
+        "url": "https://unacademy.com/course/nda"
+      },
+      {
+        "name": "Byju’s Exam Prep – NDA / CDS / SSB",
+        "url": "https://byjus.com/examprep/nda/"
+      },
+      {
+        "name": "Major Kalshi Classes – Defence Coaching",
+        "url": "https://www.majorkalshiclasses.com/"
+      },
+      {
+        "name": "Oliveboard – CDS / AFCAT / Defence",
+        "url": "https://www.oliveboard.in/"
+      },
+      {
+        "name": "Adda247 – Defence & Govt Exam Prep",
+        "url": "https://www.adda247.com/"
+      }
+    ],
+    "colleges": [
+      "IIST",
+      "IITs",
+      "IISc"
+    ],
+    "jobs": [
+      "Space Scientist",
+      "Satellite Engineer",
+      "Research Engineer"
+    ]
+  },
+  {
+    "title": "Disaster Management Officer",
+    "description": "Helps during emergencies and natural disasters.",
+    "category": "defence",
+    "education": [
+      "BSc/ BA in Disaster Management"
+    ],
+    "exams": [
+      "College Specific Exams"
+    ],
+    "prep": [
+      "Crisis management training"
+    ],
+    "colleges": [
+      {
+        "name": "TISS",
+        "url": "https://www.tiss.edu/"
+      },
+      "NIDM",
+      "IGNOU"
+    ],
+    "jobs": [
+      "Disaster Officer"
+    ]
+  },
+  {
+    "title": "Intelligence Officer",
+    "description": "Collects and analyzes information related to national security and defence strategy.",
+    "category": "defence",
+    "education": [
+      "Bachelor's degree"
+    ],
+    "exams": [
+      "UPSC / Defence exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy – NDA & Defence Exam Prep",
+        "url": "https://unacademy.com/course/nda"
+      },
+      {
+        "name": "Byju’s Exam Prep – NDA / CDS / SSB",
+        "url": "https://byjus.com/examprep/nda/"
+      }
+    ],
+    "colleges": [
+      "No Specific Colleges"
+    ],
+    "jobs": [
+      "Intelligence Officer"
+    ]
+  },
+  {
+    "title": "Professor",
+    "description": "Educates students and builds strong foundations of knowledge.",
+    "category": "education",
+    "education": [
+      "B.Ed after graduation",
+      "Postgraduate Degree",
+      "PhD"
+    ],
+    "exams": [
+      "NET / SET",
+      "GATE"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy – Teacher & TET / CTET Prep",
+        "url": "https://unacademy.com/course/ctet"
+      },
+      {
+        "name": "BYJU’S Exam Prep – Teacher / Education Exams",
+        "url": "https://byjus.com/examprep/"
+      },
+      {
+        "name": "Gradeup / BYJU’S Exam Prep – Teaching Exams",
+        "url": "https://byjus.com/examprep/"
+      }
+    ],
+    "colleges": [
+      "IITs",
+      "DU",
+      "JNU",
+      "IISc",
+      "Universities"
+    ],
+    "jobs": [
+      "Professor",
+      "Lecturer"
+    ]
+  },
+  {
+    "title": "Education Administrator",
+    "description": "Manages schools, colleges, or education institutes and their operations.",
+    "category": "education",
+    "education": [
+      "B.ED + M.Ed/ MBA"
+    ],
+    "exams": [
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy – Teacher & TET / CTET Prep",
+        "url": "https://unacademy.com/course/ctet"
+      },
+      {
+        "name": "BYJU’S Exam Prep – Teacher / Education Exams",
+        "url": "https://byjus.com/examprep/"
+      },
+      {
+        "name": "Gradeup / BYJU’S Exam Prep – Teaching Exams",
+        "url": "https://byjus.com/examprep/"
+      }
+    ],
+    "colleges": [
+      "TISS",
+      "NUEPA",
+      "Azim premji Univ",
+      "Education Universities"
+    ],
+    "jobs": [
+      "Principal",
+      "Administrator"
+    ]
+  },
+  {
+    "title": "Career Counselor",
+    "description": "Guides students in choosing suitable career paths.",
+    "category": "education",
+    "education": [
+      "BA Psych + PG in Counseling"
+    ],
+    "exams": [
+      "CUET",
+      "University admissions"
+    ],
+    "prep": [
+      {
+        "name": "Gradeup / BYJU’S Exam Prep – Teaching Exams",
+        "url": "https://byjus.com/examprep/"
+      },
+      {
+        "name": "Testbook – Teacher & Govt Exams",
+        "url": "https://testbook.com/"
+      },
+      {
+        "name": "Adda247 – Teacher / TET / Education Exams",
+        "url": "https://www.adda247.com/"
+      }
+    ],
+    "colleges": [
+      "TISS",
+      "Christ",
+      "NIPCCD"
+    ],
+    "jobs": [
+      "Career Coach",
+      "School Counselor"
+    ]
+  },
+  {
+    "title": "Academic Coach",
+    "description": "Helps students improve learning and performance.",
+    "category": "education",
+    "education": [
+      "Any bachelor's degree"
+    ],
+    "exams": [
+      "No formal exams"
+    ],
+    "prep": [
+      "Teaching & mentoring courses"
+    ],
+    "colleges": [
+      "No Specific universities"
+    ],
+    "jobs": [
+      "Academic Coach"
+    ]
+  },
+  {
+    "title": "Online Educator",
+    "description": "Teaches through digital platforms and courses.",
+    "category": "education",
+    "education": [
+      "Subject-specific degree"
+    ],
+    "exams": [
+      "No formal exams"
+    ],
+    "prep": [
+      "Subject Specification",
+      "Online teaching tools training"
+    ],
+    "colleges": [
+      "No Specific Universities"
+    ],
+    "jobs": [
+      "Online Educator"
+    ]
+  },
+  {
+    "title": "Judge",
+    "description": "Ensures justice by interpreting and applying laws.",
+    "category": "law",
+    "education": [
+      "LLB",
+      "Judicial Services Exam"
+    ],
+    "exams": [
+      "PCS(J)",
+      "HJS",
+      "Judicial Services Exam"
+    ],
+    "prep": [
+      {
+        "name": "Testbook",
+        "url": "https://testbook.com/"
+      },
+      {
+        "name": "Adda247",
+        "url": "https://www.adda247.com/"
+      },
+      {
+        "name": "Gradeup / BYJU’S Exam Prep",
+        "url": "https://byjus.com/examprep/"
+      }
+    ],
+    "colleges": [
+      "State Judicial Academies"
+    ],
+    "jobs": [
+      "Judge",
+      "magistrate"
+    ]
+  },
+  {
+    "title": "Legal Advisor",
+    "description": "Helps companies or individuals with legal matters.",
+    "category": "law",
+    "education": [
+      "LLB",
+      "Corporate Law Certs"
+    ],
+    "exams": [
+      "Law entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Testbook",
+        "url": "https://testbook.com/"
+      },
+      {
+        "name": "Adda247",
+        "url": "https://www.adda247.com/"
+      },
+      {
+        "name": "Gradeup / BYJU’S Exam Prep",
+        "url": "https://byjus.com/examprep/"
+      }
+    ],
+    "colleges": [
+      "NLU",
+      "GNLU",
+      "JGLS",
+      "Law Colleges"
+    ],
+    "jobs": [
+      "Legal Analystr",
+      "In-house Counsel"
+    ]
+  },
+  {
+    "title": "Civil Services Officer",
+    "description": "Works in government policy and administration.",
+    "category": "law",
+    "education": [
+      "Any bachelor's degree"
+    ],
+    "exams": [
+      "UPSC Civil Services Exam"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy UPSC Prep",
+        "url": "https://unacademy.com/course/upsc"
+      },
+      {
+        "name": "BYJU’S UPSC Coaching",
+        "url": "https://byjus.com/upsc/"
+      },
+      {
+        "name": "InsightsIAS",
+        "url": "https://www.insightsonindia.com/"
+      },
+      {
+        "name": "Vision IAS",
+        "url": "https://www.visionias.in/"
+      }
+    ],
+    "colleges": [
+      "Government Training Academies"
+    ],
+    "jobs": [
+      "IAS / IPS / IFS"
+    ]
+  },
+  {
+    "title": "Cyber Law Specialist",
+    "description": "Deals with online crimes, data privacy, hacking, and digital security laws.",
+    "category": "law",
+    "education": [
+      "LLB",
+      "Cyber Law Certification"
+    ],
+    "exams": [
+      "No Specific exams"
+    ],
+    "prep": [
+      "Cyber law courses"
+    ],
+    "colleges": [
+      "NLU",
+      "Symbiosis",
+      "Amity",
+      "Law Universities"
+    ],
+    "jobs": [
+      "Cyber Law Specialist",
+      "Compliane Officer"
+    ]
+  },
+  {
+    "title": "Public Policy Expert",
+    "description": "Designs and analyzes policies for social improvement.",
+    "category": "law",
+    "education": [
+      "UG + PG in Public Policy"
+    ],
+    "exams": [
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy UPSC Prep",
+        "url": "https://unacademy.com/course/upsc"
+      },
+      {
+        "name": "BYJU’S UPSC Coaching",
+        "url": "https://byjus.com/upsc/"
+      },
+      {
+        "name": "InsightsIAS",
+        "url": "https://www.insightsonindia.com/"
+      },
+      {
+        "name": "Vision IAS",
+        "url": "https://www.visionias.in/"
+      }
+    ],
+    "colleges": [
+      "TISS",
+      "JNU"
+    ],
+    "jobs": [
+      "Policy Analyst",
+      "Public Policy Advisor"
+    ]
+  },
+  {
+    "title": "Dancer / Choreographer",
+    "description": "Performs or designs dance routines across classical, folk, contemporary, and film styles. Can work in films, reality shows, stage performances, or as a dance teacher.",
+    "category": "creative",
+    "education": [
+      "Bachelor of Performing Arts (Dance)",
+      "BFA in Dance",
+      "Professional Dance Diploma"
+    ],
+    "exams": [
+      "Audition + Interview",
+      "Written + Physical + Interview"
+    ],
+    "prep": [
+      {
+        "name": "NatyaSutra Online",
+        "url": "https://www.natyasutra.com/"
+      },
+      {
+        "name": "YouTube Dance Tutorials"
+      },
+      {
+        "name": "Local Dance Academies"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "Kalakshetra Foundation",
+        "url": "https://www.kalakshetra.in"
+      },
+      {
+        "name": "National School of Drama",
+        "url": "https://www.nsd.gov.in"
+      },
+      {
+        "name": "Rabindra Bharati University"
+      },
+      {
+        "name": "Delhi University Performing Arts",
+        "url": "https://www.du.ac.in"
+      }
+    ],
+    "jobs": [
+      "Professional Dancer",
+      "Choreographer",
+      "Dance Instructor",
+      "Reality Show Performer",
+      "Dance Therapist"
+    ]
+  },
+  {
+    "title": "Photographer",
+    "description": "Captures images for fashion, journalism, wildlife, weddings, or commercial use using artistic vision and technical skill.",
+    "category": "creative",
+    "education": [
+      "BFA in Photography",
+      "Diploma in Photography",
+      "Self-taught + Portfolio"
+    ],
+    "exams": [
+      "Portfolio-based selection",
+      "Design entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "NIFT Online Courses",
+        "url": "https://www.nift.ac.in/"
+      },
+      {
+        "name": "Udemy Photography Courses",
+        "url": "https://www.udemy.com/"
+      },
+      {
+        "name": "Light & Life Academy",
+        "url": "https://www.lla.in/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "Light & Life Academy Ooty",
+        "url": "https://www.lla.in/"
+      },
+      {
+        "name": "National Institute of Photography Mumbai"
+      },
+      {
+        "name": "Jamia Millia Islamia",
+        "url": "https://www.jmi.ac.in/"
+      },
+      {
+        "name": "NIFT",
+        "url": "https://www.nift.ac.in/"
+      }
+    ],
+    "jobs": [
+      "Wedding Photographer",
+      "Fashion Photographer",
+      "Photojournalist",
+      "Wildlife Photographer",
+      "Commercial Photographer"
+    ]
+  },
+  {
+    "title": "Chef / Culinary Artist",
+    "description": "Creates and prepares food with skill and creativity. Can work in restaurants, hotels, start own food business, or become a food content creator.",
+    "category": "creative",
+    "education": [
+      "BSc in Hospitality & Hotel Management",
+      "Diploma in Culinary Arts",
+      "Certificate Courses"
+    ],
+    "exams": [
+      "NCHMCT JEE",
+      "State Hotel Management Entrance"
+    ],
+    "prep": [
+      {
+        "name": "NCHM Prep – Unacademy",
+        "url": "https://unacademy.com/"
+      },
+      {
+        "name": "Testbook – Hotel Management",
+        "url": "https://testbook.com/"
+      },
+      {
+        "name": "YouTube Culinary Channels"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "IHM Mumbai",
+        "url": "https://www.ihmctan.edu/"
+      },
+      {
+        "name": "IHM Delhi"
+      },
+      {
+        "name": "Culinary Academy of India Hyderabad"
+      },
+      {
+        "name": "Oberoi Centre of Learning"
+      }
+    ],
+    "jobs": [
+      "Chef",
+      "Pastry Artist",
+      "Food Blogger",
+      "Restaurant Owner",
+      "Food Stylist"
+    ]
+  },
+  {
+    "title": "Social Worker / NGO Professional",
+    "description": "Works to uplift communities, assist marginalized groups, and drive social change through government or non-government organizations.",
+    "category": "education",
+    "education": [
+      "BSW (Bachelor of Social Work)",
+      "BA Sociology",
+      "MSW for advanced roles"
+    ],
+    "exams": [
+      "CUET",
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy – Social Work",
+        "url": "https://unacademy.com/"
+      },
+      {
+        "name": "IGNOU Social Work Courses",
+        "url": "https://www.ignou.ac.in/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "TISS Mumbai",
+        "url": "https://www.tiss.edu/"
+      },
+      {
+        "name": "Delhi School of Social Work",
+        "url": "https://www.du.ac.in"
+      },
+      {
+        "name": "Christ University Bangalore",
+        "url": "https://www.christuniversity.in/"
+      }
+    ],
+    "jobs": [
+      "Social Worker",
+      "NGO Program Manager",
+      "Community Development Officer",
+      "Child Welfare Officer"
+    ]
+  },
+  {
+    "title": "Data Scientist / AI Engineer",
+    "description": "Analyzes large datasets and builds AI/ML models to solve real-world problems in healthcare, finance, tech, and more.",
+    "category": "technology",
+    "education": [
+      "B.Tech CSE / Data Science",
+      "BSc Statistics + Programming",
+      "Online ML Certifications"
+    ],
+    "exams": [
+      "JEE Main",
+      "CUET",
+      "University entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Coursera – ML by Andrew Ng",
+        "url": "https://www.coursera.org/"
+      },
+      {
+        "name": "Kaggle",
+        "url": "https://www.kaggle.com/"
+      },
+      {
+        "name": "Physics Wallah – Data Science",
+        "url": "https://www.pw.live/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "IITs",
+        "url": "https://www.iit.org/"
+      },
+      {
+        "name": "IIITs",
+        "url": "https://www.iiit.ac.in/"
+      },
+      {
+        "name": "NITs"
+      },
+      {
+        "name": "BITS Pilani",
+        "url": "https://www.bits-pilani.ac.in/"
+      }
+    ],
+    "jobs": [
+      "Data Scientist",
+      "ML Engineer",
+      "AI Researcher",
+      "Data Analyst",
+      "Business Intelligence Analyst"
+    ]
+  },
+  {
+    "title": "Interior Designer",
+    "description": "Designs and decorates indoor spaces — homes, offices, hotels — balancing aesthetics with functionality.",
+    "category": "creative",
+    "education": [
+      "B.Des in Interior Design",
+      "BFA",
+      "Diploma in Interior Design"
+    ],
+    "exams": [
+      "NIFT Entrance",
+      "NID Entrance",
+      "CEED",
+      "University design exams"
+    ],
+    "prep": [
+      {
+        "name": "Pahal Design",
+        "url": "https://pahaldesign.com/"
+      },
+      {
+        "name": "NID Prep – Unacademy",
+        "url": "https://unacademy.com/"
+      },
+      {
+        "name": "Arena Animation",
+        "url": "https://www.arena-multimedia.com"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "NID Ahmedabad",
+        "url": "https://www.nid.edu"
+      },
+      {
+        "name": "NIFT",
+        "url": "https://www.nift.ac.in/"
+      },
+      {
+        "name": "Symbiosis Institute of Design",
+        "url": "https://www.symbiosis.ac.in"
+      },
+      {
+        "name": "CEPT University",
+        "url": "https://cept.ac.in/"
+      }
+    ],
+    "jobs": [
+      "Interior Designer",
+      "Space Planner",
+      "Set Designer",
+      "Furniture Designer",
+      "3D Visualizer"
+    ]
+  },
+  {
+    "title": "Event Manager",
+    "description": "Plans and executes events like weddings, corporate meets, concerts, and festivals. Involves creativity, logistics, and people management.",
+    "category": "business",
+    "education": [
+      "BBA in Event Management",
+      "BSc Hospitality",
+      "Diploma in Event Management"
+    ],
+    "exams": [
+      "University entrance exams",
+      "NCHMCT JEE"
+    ],
+    "prep": [
+      {
+        "name": "Unacademy – Event & Hospitality",
+        "url": "https://unacademy.com/"
+      },
+      {
+        "name": "Coursera Event Management",
+        "url": "https://www.coursera.org/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "NIEM Mumbai",
+        "url": "https://www.niem.edu.in/"
+      },
+      {
+        "name": "Amity University",
+        "url": "https://www.amity.edu/"
+      },
+      {
+        "name": "IHM Delhi"
+      }
+    ],
+    "jobs": [
+      "Event Coordinator",
+      "Wedding Planner",
+      "Corporate Event Manager",
+      "Production Manager"
+    ]
+  },
+  {
+    "title": "Stock Market / Financial Trader",
+    "description": "Analyzes financial markets, invests in stocks, commodities, or crypto, and helps individuals or firms grow wealth.",
+    "category": "business",
+    "education": [
+      "BBA Finance",
+      "B.Com",
+      "BCom + CFA / NISM Certification"
+    ],
+    "exams": [
+      "CUET",
+      "CA Foundation",
+      "NISM Certification exams"
+    ],
+    "prep": [
+      {
+        "name": "Zerodha Varsity",
+        "url": "https://zerodha.com/varsity/"
+      },
+      {
+        "name": "NISM Official",
+        "url": "https://www.nism.ac.in/"
+      },
+      {
+        "name": "CA Foundation – ICAI",
+        "url": "https://www.icai.org/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "SRCC Delhi",
+        "url": "https://www.srcc.edu/"
+      },
+      {
+        "name": "Narsee Monjee Mumbai",
+        "url": "https://www.nmims.edu/"
+      },
+      {
+        "name": "IIM Indore IPM",
+        "url": "https://www.iimidr.ac.in/"
+      },
+      {
+        "name": "Christ University Bangalore",
+        "url": "https://www.christuniversity.in/"
+      }
+    ],
+    "jobs": [
+      "Stock Trader",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Financial Advisor",
+      "Research Analyst"
+    ]
+  },
+  {
+    "title": "Animation / VFX Artist",
+    "description": "Creates animated films, visual effects for movies, games, or advertisements using digital tools like Maya, Blender, and After Effects.",
+    "category": "creative",
+    "education": [
+      "BFA Animation",
+      "B.Des",
+      "Diploma in Animation / VFX"
+    ],
+    "exams": [
+      "Portfolio-based selection",
+      "Design entrance exams"
+    ],
+    "prep": [
+      {
+        "name": "Arena Animation",
+        "url": "https://www.arena-multimedia.com"
+      },
+      {
+        "name": "MAAC – Maya Animation",
+        "url": "https://www.maac.in/"
+      },
+      {
+        "name": "Udemy VFX Courses",
+        "url": "https://www.udemy.com/"
+      }
+    ],
+    "colleges": [
+      {
+        "name": "Whistling Woods International",
+        "url": "https://www.whistlingwoods.net/"
+      },
+      {
+        "name": "Arena Animation Centres"
+      },
+      {
+        "name": "MAAC Centres"
+      },
+      {
+        "name": "MIT Institute of Design",
+        "url": "https://www.mitid.edu.in/"
+      }
+    ],
+    "jobs": [
+      "Animator",
+      "VFX Artist",
+      "Motion Graphics Designer",
+      "3D Modeler",
+      "Game Artist"
+    ]
+  }
+]

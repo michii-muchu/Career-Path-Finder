@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page-Career Guide</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .body{
+            background-image: url(./assests/bg.jpg);
+        }
+        .div{
+            /* background-color: rgb(192, 192, 192); */
+            background-color: rgba(239, 239, 240, 0.92);
+            text-align: center;
+            padding: 12px 0px;
+            border-bottom:1px solid rgb(190, 189, 189);
+        }
+        .div h3{
+            margin-top: 35px;
+            padding:33px;
+            padding-bottom: 0px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:32px;
+            font-weight:500;
+         }
+        .div p{
+            padding: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16.5px;
+            color: rgb(79, 79, 79);
+            line-height: 1.6;
+        }
+        .div button{
+            padding:7px 92px;
+            margin: 10px 22px;
+            font-weight:bold;
+            font-size: 14px;
+            border-radius: 7px;
+            border: 1px solid darkgray;
+            background-color: white;
+        }
+        .div button a{
+            color: white;
+            text-decoration: none;
+        }
+        button:hover{
+            background-color:rgb(249, 249, 249);
+            cursor:pointer;
+        }
+        .buttons button:focus{
+            background-color: black;
+            color: white;
+        }
+        .buttons button:focus img{
+            filter: brightness(0) invert(1);
+        }
+        #first:hover{
+            background-color: rgb(28, 28, 28);
+            border-color:black;
+        }
+        #first{
+            border: 1px solid black;
+            background-color: black;
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            padding: 6px 52px;
+        }
+        #first img{
+            height: 13px;
+            padding: 0px 2px;
+            padding-left: 0px;
+        }
+        .container{
+            display: flex;
+        }
+        .div .container div{
+            width: 100%;
+            padding: 30px;
+            background-color: white;
+            border-radius: 17px;
+            margin: 30px;
+            border:1px solid lightgray;
+        }
+        .container div h3{
+            color: black;
+            font-size: 24px;
+            padding: 5px;
+            margin-top: 0px;
+        }
+        .container div p{
+            font-size: 16px;
+            color: rgb(79, 79, 79);
+            padding: 0;
+        }
+        .EC{
+            margin: 30px;
+        }
+        .EC h4{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:24px;
+            font-weight:500;
+        }
+        .EC p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(79, 79, 79);
+            display:inline;
+        }
+        .EC button{
+            padding: 5px 22px;
+            border:1px solid lightgray;
+            border-radius: 7px;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-right: 18px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .EC input{
+            width: 100%;
+            padding: 7px 22px 7px 98px;
+            border:1px solid lightgray;
+            border-radius: 7px;
+            background: rgb(243, 243, 243);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .EC .search{
+            position: relative;
+            width: 420px;
+        }
+        .EC .search img{
+            position: relative;
+            left: 20px;
+            transform: translateY(195%);
+            width: 16px;
+            height: 16px;
+            opacity: 0.6;
+        }
+        .EC input:focus-within{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+        }
+        .buttons button:hover{
+            background-color: black;
+            color: white; 
+        }
+        .EC img{
+            margin-right: 4px;
+            filter: invert(0);
+        }
+        .EC .buttons button:hover img{
+            filter: brightness(0) invert(1);
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin: 40px 60px;
+        }
+        .cards div{
+            padding: 25px;
+            background-color: rgb(241, 240, 240);
+            border:1px solid lightgray;
+            border-radius: 17px;
+            display: flex;
+            flex-direction: column;            
+        }
+        .cards div:hover{
+            transform: translateY(-3px);
+            transition: transform 0.1s;
+            box-shadow: 5px 5px 6px rgba(0,0,0,0.1);
+        }
+        .cards div h5{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: inline;
+            font-size:24px;
+            font-weight:300;
+            margin-bottom: 4px;
+        }
+        .cards div p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            color: rgb(79, 79, 79);
+            margin-bottom:14px;
+        }
+        .cards div .desc{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: rgb(79, 79, 79);
+            line-height: 1.6;
+        }
+        .cards div .label{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .cards div .value{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 13.5px;
+            font-weight: 500;
+            color: black;
+            margin-bottom: 20px;
+        }
+        .cards div button{
+            color: white;
+            background-color: black;
+            margin-top: auto;
+            padding: 7px;
+            border: none;
+            cursor: pointer;
+            font-weight:bold;
+            font-size: 14px;
+            border-radius: 7px;
+        }
+        .cards div button:hover{
+            background-color: rgb(28, 28, 28);
+        }
+        footer{
+            padding: 38px;
+            margin: 30px;
+            margin-bottom: 10px;
+            border-radius: 17px;
+            background-color: lightgray;
+            text-align: center;
+        }
+        footer div img{
+            height: 40px;
+            margin-bottom: 12px;
+        }
+        footer div h3{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* display: inline; */
+            font-size:24px;
+            font-weight:300;
+            margin-bottom: 10px;
+            
+        }
+        footer div p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: rgb;
+            line-height: 1.6;
+        }
+        footer div button{
+            padding: 7px 92px;
+            border-radius: 7px;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+        }
+        footer div button a{
+            color: white;
+            text-decoration: none;
+        }
+        footer div button:hover{
+            background-color: rgb(28, 28, 28);
+            
+        }
+        .end{
+            text-align: center;
+            margin-bottom: 10px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: rgb(79, 79, 79);
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="div">
+            <h3>Discover Your Dream Career </h3>
+            <p>Explore career paths, assess your skills, and find the perfect match for your future. Take our <br> interactive assessment to get personalized career recommendations.</p>
+            <button id="first"><img src="./assests/Icon.png" alt="icon"><a href="./question-page.html">Take Career Assessment</a></button>
+            <button onclick="scrollToCareers()">Explore Careers</button>
+            <div class="container">
+                <div>
+                    <img src="./assests/goal.png" height="25px" width="25px" alt="goal.png">
+                    <h3>20+</h3>
+                    <p>Career Path</p></div>
+                <div>
+                    <img src="./assests/growth.png" height="18px" width="30px" alt="growth.png" >
+                <h3>Growing</h3>
+                    <p>Job Market</p></div>
+                <div>
+                    <img src="./assests/expert.png" height="20px" width="27px" alt="expert.png">
+                    <h3>Expert</h3>
+                    <p>Career Guidance</p></div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="EC">
+        <h4>Explore Careers</h4>
+        <p>Browse through various career options and find what interests you</p>
+        <div class="search">
+            <img src="./assests/search.png" alt="">
+            <input type="text" id="searchInput" placeholder="Search Careers..." onkeyup="searchCareers()" />
+        </div>
+        <h4>Categories</h4>
+        <div class="buttons">
+            <button onclick="filterCategory('all')">All Careers</button>
+            <button onclick="filterCategory('technology')"><img src="./assests/edit.png" height="10px" alt="">Technology</button>
+            <button onclick="filterCategory('healthcare')"><img src="./assests/healthcare.png" height="12px" alt="">Healthcare</button>
+            <button onclick="filterCategory('business')"><img src="./assests/bag.png" height="12px" alt="">Business</button>
+            <button onclick="filterCategory('creative')"><img src="./assests/pallet.png" height="12px" alt="">Creative</button>
+            <button onclick="filterCategory('education')"><img src="./assests/education.png" height="12px" alt="">Education</button>
+            <button onclick="filterCategory('law')"><img src="./assests/law.png" height="12px" alt="">Laws</button>
+            <button onclick="filterCategory('media')"><img src="./assests/mnm.png" height="12px" alt="">Mass & Media</button>
+            <button onclick="filterCategory('defence')"><img src="./assests/defence.png" height="12px" alt="">Defence</button>
+        </div>
+    </div>
+    <div class="cards" id="careerCards">
+    </div>
+    <footer>
+        <div>
+            <img src="./assests/star.png" alt="star">
+            <h3>Not Sure Where to Start?</h3>
+            <p>Take our comprehensive career assessment to discover careers that match your interests, skills,<br> and personality. Get personalized recommendations in minutes.</p>
+            <button><a href="./question-page.html">Start Career Assessment</a></button>
+        </div>
+    </footer>
+    <p class="end">Because every career journey deserves the right guidance.❤️</p>
+
+<script>
+const cardsContainer = document.getElementById("careerCards");
+const searchInput = document.getElementById("searchInput");
+
+let allCareers = [];
+
+fetch("http://localhost:5000/api/careers")
+  .then(res => {
+    if (!res.ok) throw new Error("Server error");
+    return res.json();
+  })
+  .then(data => {
+    allCareers = data;
+    renderCareers(allCareers.slice(0, 9));
+  })
+  .catch(err => {
+    cardsContainer.innerHTML = "<p>Backend not running</p>";
+    console.error(err);
+  });
+
+function renderCareers(careers) {
+  cardsContainer.innerHTML = "";
+
+  if (careers.length === 0) {
+    cardsContainer.innerHTML = "<p>No careers found</p>";
+    return;
+  }
+
+  careers.forEach(c => {
+    cardsContainer.innerHTML += `
+      <div>
+        <h5>${c.title}</h5>
+        <p class="category">${c.category}</p>
+        <p class="desc">${c.description}</p>
+        <p class="label">Education:</p>
+        <p class="value">${c.education.join(", ")}</p>
+        <button onclick="openDetails('${c.title}')">View Details</button>
+      </div>
+    `;
+  });
+}
+
+searchInput.addEventListener("input", () => {
+  const q = searchInput.value.toLowerCase();
+  const filtered = allCareers.filter(c =>{
+    const title=(c.title||c.title||"").toLowerCase();
+    const category=(c.category||c.category||"").toLowerCase();
+    return title.includes(q)||category.includes(q);
+  });
+  renderCareers(filtered);
+});
+
+function filterCategory(cat) {
+  if (cat === "all") {
+    renderCareers(allCareers.slice(0, 9));
+    return;
+  }
+  const filtered = allCareers.filter(
+    c => c.category.toLowerCase() === cat.toLowerCase()
+  );
+  renderCareers(filtered);
+}
+
+function openDetails(title) {
+  window.location.href =
+    `education-details.html?title=${encodeURIComponent(title)}`;
+}
+
+function scrollToCareers() {
+  document.querySelector(".EC")
+    .scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

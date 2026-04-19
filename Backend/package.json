@@ -1,0 +1,14 @@
+{
+  "name": "career-guide-backend",
+  "version": "1.0.0",
+  "description": "Backend for Career Guide Web App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.1"
+  }
+}

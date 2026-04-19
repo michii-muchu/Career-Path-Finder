@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Career Details-page</title>
+
+<style>
+body{
+    margin:40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f4f4f4;
+}
+a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:inline-flex;
+    gap:10px;
+    align-items:center;
+    margin-bottom:20px;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+}
+.card{
+    background:#e5e4e4;
+    border:1px solid darkgray;
+    border-radius:14px;
+    padding:30px;
+    margin-bottom:25px;
+}
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:500;
+}
+.section{
+    margin-top:20px;
+}
+.section h3{
+    margin-bottom:10px;
+}
+ul{
+    padding-left:20px;
+}
+ul li{
+    margin-bottom:6px;
+}
+footer{
+    position: relative;
+    text-align:center;
+    font-size:12px;
+    margin-top:50px;
+    bottom: -25px;
+    color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<a href="result.html"><img src="./assests/arrow left.png" height="15px" alt=""> Back to Results</a>
+
+<div class="container">
+    <div class="card">
+        <h2 id="careerTitle"></h2>
+        <p id="careerIntro"></p>
+    </div>
+
+    <div class="card section">
+        <h3>📘 Required Exams</h3>
+        <ul id="exams"></ul>
+    </div>
+
+    <div class="card section">
+        <h3>🎓 Recommended Courses</h3>
+        <ul id="courses"></ul>
+    </div>
+
+    <div class="card section">
+        <h3>🏫 Top Colleges</h3>
+        <ul id="colleges"></ul>
+    </div>
+
+    <div class="card section">
+        <h3>🛠 Key Skills</h3>
+        <ul id="skills"></ul>
+    </div>
+
+    <div class="card section">
+        <h3>🧭 Career Roadmap</h3>
+        <ul id="roadmap"></ul>
+    </div>
+</div>
+
+<footer>
+Because every career journey deserves the right guidance. ❤️
+</footer>
+
+<!-- <script src="career-data.js"></script> -->
+ <script>
+    const data = {
+        "Software Engineer":{
+            intro:"Software Engineers design, build, and maintain applications that power modern digital life.",
+            exams:["JEE Main","GATE","University Entrance Exams"],
+            courses:["B.Tech / BE","Online Courses (Coursera, Udemy)","Full Stack Bootcamps"],
+            colleges:["IITs","NITs","IIITs","Top Private Universities"],
+            skills:["Programming","Problem Solving","Data Structures","System Design"],
+            roadmap:[
+            "Learn programming basics",
+            "Build projects",
+            "Internships",
+            "Specialize (Web / AI / App)",
+            "Apply for jobs"
+            ]
+        },
+
+        "UI/UX Designer":{
+            intro:"UI/UX Designers focus on creating intuitive and visually appealing digital experiences.",
+            exams:["Design Aptitude Tests","University Design Exams"],
+            courses:["B.Des","UI/UX Certification Courses"],
+            colleges:["NIFT","NID","Private Design Institutes"],
+            skills:["Figma","User Research","Wireframing","Creativity"],
+            roadmap:[
+            "Learn design basics",
+            "Practice with tools",
+            "Build portfolio",
+            "Freelance / Internship",
+            "Full-time role"
+            ]
+        },
+
+        "Doctor":{
+            intro:"Doctors diagnose and treat illnesses and work to improve human health.",
+            exams:["NEET UG","NEET PG"],
+            courses:["MBBS","MD / MS"],
+            colleges:["AIIMS","Government Medical Colleges"],
+            skills:["Medical Knowledge","Empathy","Decision Making"],
+            roadmap:[
+            "Clear NEET",
+            "MBBS",
+            "Internship",
+            "Specialization",
+            "Practice"
+            ]
+        }
+    };
+
+    const selectedCareer = localStorage.getItem("selectedCareer");
+
+    const career = data[selectedCareer];
+
+    document.getElementById("careerTitle").textContent = selectedCareer;
+    document.getElementById("careerIntro").textContent = career?.intro || "Details coming soon...";
+
+    function fillList(id, items){
+        const ul=document.getElementById(id);
+        if(!items) return;
+        items.forEach(i=>{
+            ul.innerHTML+=`<li>${i}</li>`;
+        });
+    }
+
+    fillList("exams",career?.exams);
+    fillList("courses",career?.courses);
+    fillList("colleges",career?.colleges);
+    fillList("skills",career?.skills);
+    fillList("roadmap",career?.roadmap);
+
+</script>
+</body>
+</html>

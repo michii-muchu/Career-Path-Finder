@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Details</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 50px 60px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a.back-link {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.container { max-width: 900px; width: 100%; }
+
+.main-card {
+    background: rgb(229,228,228);
+    border: 1px solid darkgray;
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 22px;
+}
+.main-card h2 {
+    margin: 0 0 6px;
+    font-weight: 500;
+    font-size: 22px;
+}
+.main-card p { margin: 0; color: #555; font-size: 14px; line-height: 1.6; }
+
+/* AI badge */
+.ai-label {
+    font-size: 11px;
+    background: #111;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+/* Stats row */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 22px;
+}
+.stat-card {
+    background: white;
+    border: 1px solid darkgray;
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+}
+.stat-card .label { font-size: 12px; color: #888; margin-bottom: 6px; }
+.stat-card .value { font-size: 14px; font-weight: 500; color: #111; }
+
+/* Sections */
+.section {
+    background: white;
+    border: 1px solid darkgray;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+.section h3 {
+    margin: 0 0 14px;
+    font-weight: 500;
+    font-size: 16px;
+}
+ul { padding-left: 20px; margin: 0; }
+li { margin-bottom: 9px; color: #444; font-size: 14px; line-height: 1.5; }
+li a { color: #111; }
+
+/* Roadmap steps */
+.roadmap-steps { display: flex; flex-direction: column; gap: 14px; }
+.step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+.step-num {
+    width: 34px; height: 34px;
+    background: #111;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.step-content .step-title { font-weight: 500; font-size: 14px; margin-bottom: 3px; }
+.step-content .step-duration { font-size: 12px; color: #888; margin-bottom: 4px; }
+.step-content .step-desc { font-size: 13px; color: #555; line-height: 1.5; }
+
+/* Pros & Cons */
+.pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pros-cons .col h4 { margin: 0 0 10px; font-size: 14px; }
+.pros-cons .col ul { padding-left: 18px; }
+
+/* College cards grid */
+.college-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+.college-card {
+    background: #f8f8f8;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 16px;
+    transition: box-shadow 0.2s;
+}
+.college-card:hover { box-shadow: 4px 6px 6px rgba(0,0,0,0.09); }
+.college-card h4 { margin: 0 0 6px; font-weight: 500; font-size: 14px; }
+.college-card p { margin: 0; font-size: 12px; color: #666; }
+
+/* Loading overlay */
+#loadingOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.92);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.spinner {
+    width: 44px; height: 44px;
+    border: 3px solid #eee;
+    border-top-color: #111;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+#loadingOverlay p { font-size: 14px; color: #444; }
+#loadingMsg { font-size: 12px; color: #888; margin-top: 6px; }
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<div id="loadingOverlay">
+    <div class="spinner"></div>
+    <p>Generating your personalized roadmap...</p>
+    <p id="loadingMsg">Analyzing this career for you ✨</p>
+</div>
+
+<a class="back-link" id="backBtn" href="#">← Back</a>
+
+<div class="container">
+
+    <!-- Header card -->
+    <div class="main-card">
+        <span class="ai-label">Generated Roadmap ✨</span>
+        <h2 id="courseTitle">Loading...</h2>
+        <p id="courseDesc"></p>
+    </div>
+
+    <!-- Stats: salary, job market -->
+    <div class="stats-row">
+        <div class="stat-card">
+            <div class="label">💰 Salary Range (India)</div>
+            <div class="value" id="salaryRange">Loading...</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">📈 Job Market</div>
+            <div class="value" id="jobMarket">Loading...</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">🌍 Work Environment</div>
+            <div class="value" id="workEnv">Loading...</div>
+        </div>
+    </div>
+
+    <!-- AI Overview -->
+    <div class="section">
+        <h3>📖 Career Overview</h3>
+        <p id="overview" style="font-size:14px; color:#444; line-height:1.7; margin:0"></p>
+    </div>
+
+    <!-- Roadmap steps -->
+    <div class="section">
+        <h3>🧭 Your Personalized Roadmap</h3>
+        <div class="roadmap-steps" id="roadmapSteps"></div>
+    </div>
+
+    <!-- Required Education -->
+    <div class="section">
+        <h3>🎓 Required Education</h3>
+        <ul id="educationList"></ul>
+    </div>
+
+    <!-- Entrance exams -->
+    <div class="section">
+        <h3>📝 Entrance & Selection Process</h3>
+        <ul id="examList"></ul>
+    </div>
+
+    <!-- Key Skills -->
+    <div class="section">
+        <h3>🛠️ Key Skills to Develop</h3>
+        <ul id="skillsList"></ul>
+    </div>
+
+    <!-- Pros & Cons -->
+    <div class="section">
+        <h3>⚖️ Pros & Cons</h3>
+        <div class="pros-cons">
+            <div class="col">
+                <h4>✅ Pros</h4>
+                <ul id="prosList"></ul>
+            </div>
+            <div class="col">
+                <h4>❌ Cons</h4>
+                <ul id="consList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- India context -->
+    <div class="section">
+        <h3>🇮🇳 Indian Context & Opportunities</h3>
+        <p id="indianContext" style="font-size:14px; color:#444; line-height:1.7; margin:0"></p>
+    </div>
+
+    <!-- Prep platforms -->
+    <div class="section">
+        <h3>📚 Preparation Platforms</h3>
+        <ul id="prepList"></ul>
+    </div>
+
+    <!-- Colleges -->
+    <div class="section">
+        <h3>🏫 Top Colleges / Institutes <span class="ai-label" style="vertical-align:middle;margin-left:8px">Recommendations ✨</span></h3>
+        <div class="college-cards" id="collegeCards"></div>
+    </div>
+
+    <!-- Career opportunities -->
+    <div class="section">
+        <h3>💼 Career Opportunities</h3>
+        <ul id="jobList"></ul>
+    </div>
+</div>
+
+<footer>Because every career journey deserves the right guidance ❤️</footer>
+
+<script>
+const params   = new URLSearchParams(window.location.search);
+const title    = params.get("title");
+const from     = params.get("from");
+const backBtn  = document.getElementById("backBtn");
+
+backBtn.href = from === "result" ? "./Result-page.html" : "./homepage.html";
+
+if (!title) {
+    document.body.innerHTML = "<h2 style='text-align:center;margin-top:100px'>Invalid career selection</h2>";
+    throw new Error("No title");
+}
+
+const userAnswers = JSON.parse(sessionStorage.getItem("userAnswers") || "[]");
+
+function fillList(id, data) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = "";
+
+    if (!Array.isArray(data) || !data.length) {
+        el.innerHTML = "<li>Information not available</li>";
+        return;
+    }
+
+    data.forEach(item => {
+        if (typeof item === "object" && item.url) {
+            el.innerHTML += `<li><a href="${item.url}" target="_blank">${item.name || "Resource"}</a></li>`;
+        } else if (typeof item === "object") {
+            el.innerHTML += `<li>${item.name || JSON.stringify(item)}</li>`;
+        } else {
+            el.innerHTML += `<li>${item}</li>`;
+        }
+    });
+}
+
+function renderRoadmap(steps) {
+    const container = document.getElementById("roadmapSteps");
+    if (!steps || !steps.length) {
+        container.innerHTML = "<p style='color:#888'>Roadmap not available</p>";
+        return;
+    }
+    container.innerHTML = steps.map(s => `
+        <div class="step">
+            <div class="step-num">${s.step}</div>
+            <div class="step-content">
+                <div class="step-title">${s.title}</div>
+                ${s.duration ? `<div class="step-duration">⏱ ${s.duration}</div>` : ""}
+                <div class="step-desc">${s.description}</div>
+            </div>
+        </div>`
+    ).join("");
+}
+
+function renderColleges(colleges) {
+    const container = document.getElementById("collegeCards");
+    if (!colleges || !colleges.length) {
+        container.innerHTML = "<p>No college data available</p>";
+        return;
+    }
+    container.innerHTML = colleges.map(col => {
+        // AI format: { name, location, course, fees, why }
+        if (typeof col === "object" && col.course) {
+            return `
+            <div class="college-card">
+                <h4>${col.name}</h4>
+                ${col.location ? `<p style="font-size:11px;color:#888;margin:0 0 6px">📍 ${col.location}</p>` : ""}
+                ${col.course   ? `<p style="font-size:12px;margin:0 0 4px"><strong>Course:</strong> ${col.course}</p>` : ""}
+                ${col.fees     ? `<p style="font-size:12px;margin:0 0 4px"><strong>Fees:</strong> ${col.fees}</p>` : ""}
+                ${col.why      ? `<p style="font-size:12px;color:#555;margin:0;line-height:1.4">${col.why}</p>` : ""}
+            </div>`;
+        }
+        // Fallback for old format
+        const name = typeof col === "object" ? col.name : col;
+        const url  = typeof col === "object" ? col.url  : null;
+        return `
+        <div class="college-card">
+            <h4>${url ? `<a href="${url}" target="_blank">${name}</a>` : name}</h4>
+            <p>Offers specialized programs in this field.</p>
+        </div>`;
+    }).join("");
+}
+
+// ── Fetch AI roadmap ──────────────────────────────────────────────────────────
+fetch("http://localhost:5000/api/career-roadmap", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ careerTitle: title, userAnswers })
+})
+.then(res => {
+    if (!res.ok) throw new Error("Server error");
+    return res.json();
+})
+.then(c => {
+    // Hide loading
+    document.getElementById("loadingOverlay").style.display = "none";
+
+    // Header
+    document.getElementById("courseTitle").textContent  = c.title || title;
+    document.getElementById("courseDesc").textContent   = c.description || "";
+
+    // Stats
+    document.getElementById("salaryRange").textContent  = c.salaryRange   || "Varies";
+    document.getElementById("jobMarket").textContent    = c.jobMarket     || "Growing";
+    document.getElementById("workEnv").textContent      =
+        Array.isArray(c.education) ? c.education[0] : (c.workEnvironment || "Varied");
+
+    // AI-generated sections
+    document.getElementById("overview").textContent     = c.overview      || c.description || "";
+    document.getElementById("indianContext").textContent = c.indianContext || "";
+
+    renderRoadmap(c.roadmap);
+
+    // Skills
+    fillList("skillsList", c.topSkills || c.skills);
+
+    // Pros & Cons
+    fillList("prosList",  c.prosAndCons?.pros);
+    fillList("consList",  c.prosAndCons?.cons);
+
+    // Static data sections
+    fillList("educationList", c.education);
+    fillList("examList",      c.exams);
+    fillList("prepList",      c.prep);
+    fillList("jobList",       c.jobs);
+    renderColleges(c.topColleges || c.colleges);
+})
+.catch(err => {
+    console.error(err);
+    document.getElementById("loadingOverlay").style.display = "none";
+    document.body.innerHTML += `
+        <div style="text-align:center; margin-top:80px">
+            <h2>Could not load career details</h2>
+            <p>Make sure the backend server is running on port 5000.</p>
+        </div>`;
+});
+</script>
+</body>
+</html>

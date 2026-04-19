@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Career Results</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 50px 63px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            background: #f9f9f9;
+        }
+        a.back-link {
+            margin-bottom: 23px;
+            align-self: flex-start;
+            text-decoration: none;
+            display: inline-flex;
+            gap: 10px;
+            font-size: 14px;
+            align-items: center;
+            color: black;
+        }
+        .result-container { width: 100%; max-width: 850px; }
+
+        /* Match card */
+        .match {
+            padding: 25px;
+            background: rgb(229, 228, 228);
+            border: 1px solid darkgray;
+            border-radius: 14px;
+            margin-bottom: 18px;
+        }
+        .match h3 {
+            margin: 0 0 8px;
+            font-weight: 500;
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            font-size: 18px;
+        }
+        .match p { margin: 0 0 14px; font-size: 14px; color: rgb(69,69,69); }
+        .category-badge {
+            background: #111;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 7px;
+            font-size: 12px;
+            display: inline-block;
+        }
+
+        /* AI Insight box */
+        .insight-box {
+            background: #fff;
+            border: 1px solid darkgray;
+            border-radius: 14px;
+            padding: 20px 25px;
+            margin-bottom: 25px;
+        }
+        .insight-box .ai-label {
+            font-size: 11px;
+            background: #111;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .insight-box p {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Section headers */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 28px 0 12px;
+        }
+        .section-header h3 { margin: 0; font-weight: 500; font-size: 17px; }
+        .section-header a {
+            text-decoration: none;
+            font-size: 13px;
+            color: #555;
+            border: 1px solid #ccc;
+            padding: 5px 14px;
+            border-radius: 7px;
+        }
+        .section-header a:hover { background: black; color: white; }
+
+        /* Top cards grid */
+        .card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+        .card div {
+            padding: 25px;
+            border: 1px solid darkgray;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            transition: box-shadow 0.2s;
+        }
+        .card div:hover { box-shadow: 6px 10px 8px rgba(0,0,0,0.09); }
+        .card h3 { margin: 0 0 8px; font-size: 15px; font-weight: 500; }
+        .card .why-match {
+            font-size: 12px;
+            color: #888;
+            font-style: italic;
+            margin: 0 0 10px;
+            line-height: 1.4;
+        }
+        .card p {
+            font-size: 13px;
+            color: rgb(69,69,69);
+            line-height: 1.5;
+            margin: 0 0 18px;
+            flex: 1;
+        }
+        .card button {
+            padding: 7px;
+            background: rgb(229,228,228);
+            border: 1px solid darkgray;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: inherit;
+        }
+        .card button:hover { background: black; color: white; }
+
+        /* Other matches */
+        .card2 { display: flex; gap: 18px; }
+        .card2 div {
+            flex: 1;
+            padding: 22px;
+            border: 1px solid darkgray;
+            border-radius: 14px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.2s;
+        }
+        .card2 div:hover { box-shadow: 6px 10px 8px rgba(0,0,0,0.09); }
+        .card2 h3 { margin: 0 0 6px; font-size: 15px; font-weight: 500; }
+        .card2 .why-match {
+            font-size: 12px;
+            color: #888;
+            font-style: italic;
+            margin: 0 0 10px;
+            line-height: 1.4;
+        }
+        .card2 p {
+            font-size: 13px;
+            color: rgb(69,69,69);
+            line-height: 1.5;
+            margin: 0 0 18px;
+            flex: 1;
+        }
+        .card2 button {
+            padding: 7px;
+            background: rgb(229,228,228);
+            border: 1px solid darkgray;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: inherit;
+        }
+        .card2 button:hover { background: black; color: white; cursor: pointer; }
+
+        footer p {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            margin-top: 50px;
+        }
+
+        /* Loading overlay */
+        #loadingOverlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+        .spinner {
+            width: 44px; height: 44px;
+            border: 3px solid #eee;
+            border-top-color: #111;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 18px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        #loadingOverlay p { font-family: 'Lucida Sans', sans-serif; color: #444; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<div id="loadingOverlay">
+    <div class="spinner"></div>
+    <p>Analyzing your results...</p>
+</div>
+
+<a class="back-link" href="./homepage.html">← Back to Home</a>
+
+<div class="result-container">
+    <div class="match">
+        <h3>⭐ Your Career Match Results</h3>
+        <p>Based on your responses, we have identified careers that align with your interests and strengths.</p>
+        <p style="margin-bottom:10px">Your top category:</p>
+        <div id="categoryResult"></div>
+    </div>
+
+    <!-- AI Personal Insight -->
+    <div class="insight-box">
+        <span class="ai-label">✨ AI Insight</span>
+        <p id="personalInsight">Loading...</p>
+    </div>
+
+    <!-- Top Recommendations -->
+    <div class="section-header">
+        <h3>🎯 Top Recommendations</h3>
+        <a href="./question-page.html">Retake Assessment</a>
+    </div>
+    <p style="font-size:13px; color:#666; margin: 0 0 14px">Careers that best match your profile —</p>
+    <div class="card" id="topCard"></div>
+
+    <!-- Other Matches -->
+    <div class="section-header">
+        <h3>🔍 Other Potential Matches</h3>
+    </div>
+    <p style="font-size:13px; color:#666; margin: 0 0 14px">Additional careers worth exploring —</p>
+    <div class="card2" id="otherCard"></div>
+</div>
+
+<footer><p>Because every career journey deserves the right guidance. ❤️</p></footer>
+
+<script>
+const resultData = JSON.parse(sessionStorage.getItem("resultData"));
+
+if (!resultData) {
+    alert("Please take the assessment first");
+    window.location.href = "question-page.html";
+}
+
+const categoryLabels = {
+    creative:   "🎨 Creative & Design Careers",
+    technology: "💻 Engineering, Technology & Innovation",
+    healthcare: "🏥 Healthcare & Life Sciences",
+    business:   "📊 Business & Entrepreneurship",
+    defence:    "🪖 Defence & Public Services",
+    media:      "🎥 Media & Communication",
+    education:  "📚 Education & Teaching",
+    law:        "⚖️ Law & Public Policy"
+};
+
+const { topCategory, categoryReason, topRecommendations, otherMatches, personalInsight } = resultData;
+
+// Hide loading
+document.getElementById("loadingOverlay").style.display = "none";
+
+// Category badge
+document.getElementById("categoryResult").innerHTML =
+    `<span class="category-badge">${categoryLabels[topCategory] || topCategory}</span>
+     ${categoryReason ? `<p style="margin-top:12px; font-size:13px; color:#555; line-height:1.6">${categoryReason}</p>` : ""}`;
+
+// Personal insight
+document.getElementById("personalInsight").textContent =
+    personalInsight || "You have a unique combination of skills and interests that opens up many exciting career paths!";
+
+// Render top recommendations
+const topCard = document.getElementById("topCard");
+topCard.innerHTML = "";
+(topRecommendations || []).forEach(career => {
+    topCard.innerHTML += `
+    <div>
+        <h3>${career.title}</h3>
+        ${career.whyMatch ? `<p class="why-match">💡 ${career.whyMatch}</p>` : ""}
+        <p>${career.description}</p>
+        <button onclick="openDetails('${career.title}')">Learn More →</button>
+    </div>`;
+});
+
+// Render other matches
+const otherCard = document.getElementById("otherCard");
+otherCard.innerHTML = "";
+(otherMatches || []).forEach(career => {
+    otherCard.innerHTML += `
+    <div>
+        <h3>${career.title}</h3>
+        ${career.whyMatch ? `<p class="why-match">💡 ${career.whyMatch}</p>` : ""}
+        <p>${career.description}</p>
+        <button onclick="openDetails('${career.title}')">Learn More →</button>
+    </div>`;
+});
+
+function openDetails(title) {
+    window.location.href =
+        `education-details.html?title=${encodeURIComponent(title)}&from=result`;
+}
+</script>
+</body>
+</html>
