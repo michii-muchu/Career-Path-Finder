@@ -6,7 +6,7 @@ An AI-powered career guidance web app designed for students who are confused abo
 - 🎯 Personalized career recommendations based on your answers
 - 🗺️ Step-by-step roadmap — entrance exam to first job
 - 🏫 AI-recommended colleges with course & fee details
-- 🔍 Search & filter across 58+ career options
+- 🔍 Search & filter across 50+ career options
 
 ## Tech Stack
 - Frontend: HTML, CSS, Vanilla JavaScript
